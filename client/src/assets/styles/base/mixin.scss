@@ -1,0 +1,25 @@
+@mixin button{
+    color:white;
+    font-size: 10pt;
+    width: 170px;
+    height: 40px;
+}
+@mixin warning{
+    width:fit-content;
+    text-align: center;
+    border-radius: 4px;
+    color:white;
+    padding: 5px 10px;
+    font-size: 10pt;
+}
+@mixin small_button{
+    color:white;
+    font-size: 10pt;
+    padding: 8px 25px;
+}
+@mixin big_button{
+    color:white;
+    font-size: 10pt;
+
+    padding: 15px 70px;
+}

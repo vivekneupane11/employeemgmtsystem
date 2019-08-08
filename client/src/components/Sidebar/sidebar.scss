@@ -1,0 +1,78 @@
+@import "assets/styles/colors.scss";
+
+.sidebar{    
+    width: 20%;
+    height: 100vh;
+    padding: 1em 1em;
+    background-image: linear-gradient($primary, #0C2743);
+
+    .home-link{
+        margin-top: 1em;
+        .home{
+            margin-left: 2em;
+            color: #fff;
+        }
+
+        .home:hover{
+            margin-left: 2em;
+            color: #fff;
+        }
+    }
+    .dropdown-link{
+        margin: 1em 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;        
+        
+
+        .link{
+            text-decoration: none;
+            padding: 0 0.5em;
+            color: #fff;
+            flex-basis: 60%;
+            
+        }
+
+        .link:hover{
+            background-color: $hover;
+        }
+        
+        .link:active{
+            background-color: $active;
+        }
+    }
+
+    
+
+    .dropdown-links{
+        background-color: $primary;
+        padding: 0.25em;
+
+        div{
+            margin-left: 1em;
+            padding: 0.5em 0;
+            border-left: $seafoam 1px solid;
+        }
+
+        .link{
+            text-decoration: none;
+            color: #fff;
+            margin:0 1em;
+            padding-left: 0 0.75em;
+            
+        }
+        
+        .link:hover{
+            text-decoration: none;
+            color : $hover;
+        }
+        
+        .link:active{
+            color : $active;
+        }
+    }
+}
+
+.icon{    
+    color: #fff;
+}

@@ -1,0 +1,46 @@
+@import "assets/styles/colors.scss";
+
+.createDepart{
+    flex-basis: 80%;
+
+    .createDepartForm{
+        background-color: #eee;
+        padding: 2em;
+        border-radius: 1em;
+
+        .departName{
+            padding: 0.5em;
+            border: none;
+            border-radius: 2em;
+            border: #fff 2px solid;
+        }
+
+        .departName:hover{
+            border: 2px solid $hover;
+        }
+
+        .departName:focus{
+            border: 2px solid $active;
+        }
+    }
+
+    .submitBtn{
+        width: 10em;
+        height: 2em;
+        color: #fff;
+        display: block;
+        margin: 1em auto;
+        border-style: none;
+        border-radius: 10em;
+        background-color: $primary;       
+        
+    }
+
+    .submitBtn:hover{
+        background-color: $hover;
+    }
+
+    .submitBtn:active{
+        background-color: $active;
+    }
+}

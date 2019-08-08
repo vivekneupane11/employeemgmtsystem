@@ -1,0 +1,106 @@
+@import '../../assets/styles//base//variables.scss';
+@import '../../assets/styles/base/icons';
+
+.upload-wrapper {
+    width: 1133px;
+    padding: 21px 50px;
+    background-color: rgb(231, 226, 226);
+
+    .container {
+        padding: 6px 50px;
+        box-shadow: 1px 1px 4px 2px #8888;
+        background-color: white;
+
+        .inputfields {
+            padding: 10px 0;
+
+            input {
+                width: 70%;
+                border: 1px solid map-get($map: $colors, $key: "primary");
+                padding: 10px;
+                border-radius: 8px;
+                margin: 5px 0;
+            }
+
+            textarea {
+                width: 70%;
+                border: 1px solid map-get($map: $colors, $key: "primary");
+                padding: 10px;
+                border-radius: 8px;
+                height: 150px;
+                margin: 5px 0;
+
+            }
+
+            .inputfile {
+                padding: 0px;
+
+                width: 0.1px;
+                height: 0.1px;
+                opacity: 0;
+                overflow: hidden;
+                position: absolute;
+                z-index: -1;
+            }
+
+        }
+
+        .error {
+            input {
+                background-color: red;
+            }
+        }
+
+
+        .filename {
+            display: flex;
+            flex-flow: row;
+            align-items: center;
+
+            label {
+                margin-left: auto;
+                padding: 14px 15px;
+                border-radius: 7px;
+                color: white;
+                cursor: pointer;
+                background-color: map-get($map: $activecolors, $key: "primary");
+
+            }
+
+            i {
+                color: white;
+                padding: 0 10px;
+            }
+
+        }
+
+        .radio {
+            display: flex;
+            align-items: center;
+
+            input {
+                width: 20px;
+            }
+        }
+
+        .header {
+
+            .heading {
+                color: map-get($map: $activecolors, $key:"primary");
+                padding: 10px 0;
+            }
+        }
+
+        .title,
+        .description {
+            display: flex;
+            flex-flow: column;
+        }
+
+        .upload-form-body {
+            padding: 10px 50px;
+
+        }
+
+    }
+}

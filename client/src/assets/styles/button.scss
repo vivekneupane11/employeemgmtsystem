@@ -1,0 +1,34 @@
+@import './base/variables.scss';
+@import './base/mixin.scss';
+
+
+@function color($color-name,$type){
+   @if $type =="normal"{
+       @return map-get($colors,$color-name);  
+   }
+   @else if $type =="hover"{
+        @return map-get($hovercolors,$color-name);  
+    }
+    @else if $type =="active"{
+        @return map-get($activecolors,$color-name);   
+    }
+}
+$selectors:(primary,secondary1,secondary2);
+.buttonclass{
+    @each $class in $selectors {
+        .#{$class} {
+            @include button();
+            background:color($class,"normal")
+        }
+        .#{$class}:hover {
+            @include button();
+            background:color($class,"hover")
+        }
+        .#{$class}:focus {
+            @include button();
+            background:color($class,"active")
+        }
+      }
+}
+
+

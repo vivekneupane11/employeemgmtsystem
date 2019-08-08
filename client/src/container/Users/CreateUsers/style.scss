@@ -1,0 +1,35 @@
+@import "assets/styles/colors.scss";
+
+.create-user-form{
+    .user-form{
+        background-color: #aaa;
+        padding: 2em;
+        border-radius: 2em;
+        width: 35%;
+    }
+
+    .form-input{
+        width: 100%;
+        margin: 0.5em 0;
+        position: relative;
+
+        .validity{
+            position: absolute;
+            right: 0;
+        }
+    }
+
+    .submit-button{
+        display: block;
+        margin: 0 auto;
+    }
+
+}
+
+label{
+    margin: 0;
+}
+
+p{
+    margin: 0;
+}
